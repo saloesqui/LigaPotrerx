@@ -23,19 +23,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00ffe8;
+    color: #8c52ff;
     text-decoration: none;
     font-size: 1.2em;
 }
 
 button {
-    background: #fc9038;
+    background:  #85f876;
     color: #000;
     border: none;
     padding: 10px 20px;
     font-size: 1.5em;
     cursor: pointer;
-    font-family: 'Pixellet TH', sans-serif;
+    font-family: 'Pixellet TH', 'Bobby Jones Condensed';
     text-transform: uppercase;
 }
 
