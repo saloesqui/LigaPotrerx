@@ -9,7 +9,8 @@ body {
 h1, h2 {
     font-family: 'Handjet', sans-serif;
     color: #8c52ff;
-    text-shadow: 0px 0px 20px #ff66c4;
+    text-shadow: 2px 0px 15px #ff66c4;
+    font-size: 36px;
 }
 
 nav ul {
