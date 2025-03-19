@@ -1,0 +1,44 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Chewy', cursive;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Handjet', sans-serif;
+    color: #8c52ff;
+    text-shadow: 0px 0px 10px #ff66c4;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: #00ffe8;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+button {
+    background: #fc9038;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-family: 'Pixellet TH', sans-serif;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: #85f876;
+    color: #000;
+}
