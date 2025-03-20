@@ -6,7 +6,7 @@ body {
     text-align: center;
     font-size: 25px;
     text-transform: uppercase;
-    background-image: url('https://github.com/saloesqui/LigaPotrerx/blob/raw/fondo.png'); 
+    background-image: url ('https://github.com/saloesqui/LigaPotrerx/blob/raw/fondo.png'); 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
