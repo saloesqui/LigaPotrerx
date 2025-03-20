@@ -9,8 +9,11 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%; /* Cambié el height de 100vh a 100% */
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Esto asegura que los elementos se distribuyan */
 }
 
 h1, h2 {
@@ -25,7 +28,7 @@ h1, h2 {
     color: #8c52ff;
     text-shadow: 2px 0px 15px #ff66c4;
     font-size: 33px;
-    margin-top: 10px; /* Ajuste el espacio debajo del título */
+    margin-top: 10px;
 }
 
 nav ul {
@@ -59,6 +62,19 @@ button:hover {
     background: #85f876;
     color: #000;
 }
+
+/* Estilos para el footer */
+footer {
+    margin-top: auto; /* Asegura que el footer se quede al final */
+    padding: 20px 0;
+}
+
+footer a {
+    color: #85f876;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
 
 
 button:hover {
