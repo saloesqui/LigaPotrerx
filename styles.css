@@ -4,7 +4,7 @@ body {
     color: #fff;
     font-family: 'Handjet';
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
     text-transform: uppercase;
     background-image: url('https://raw.githubusercontent.com/saloesqui/LigaPotrerx/main/fondo.jpg');
     background-size: cover;
@@ -17,7 +17,7 @@ h1, h2 {
     font-family: 'Handjet', sans-serif;
     color: #8c52ff;
     text-shadow: 2px 0px 15px #ff66c4;
-    font-size: 35px;
+    font-size: 33px;
 }
 
 nav ul {
