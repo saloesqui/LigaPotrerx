@@ -1,66 +1,51 @@
 body {
     background-color: #000;
+
     color: #fff;
-    font-family: 'Handjet', sans-serif;
+    font-family: 'Handjet';
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
     text-transform: uppercase;
+    background-image: url('https://raw.githubusercontent.com/saloesqui/LigaPotrerx/main/fondo.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    margin: 0; 
+    
 }
 
-header {
-    margin-bottom: 20px; /* Reduce el espacio debajo del logo */
+h1, h2 {
+    font-family: 'Handjet', sans-serif;
+    color: #8c52ff;
+    text-shadow: 2px 0px 15px #ff66c4;
+    font-size: 33px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px; /* Agrega separación entre el menú y el contenido */
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
 }
 
 nav ul li a {
-    color: #00ffe8;
+    color: #8c52ff;
     text-decoration: none;
-    font-size: 1.5em;
-}
-
-.header-content img {
-    margin-bottom: 10px; /* Reduce el espacio entre el logo y el título */
-}
-
-h1 {
-    font-family: 'Handjet', sans-serif;
-    color: #8c52ff;
-    text-shadow: 0px 0px 20px #ff66c4;
-    margin-bottom: 5px; /* Reduce espacio debajo del título */
-}
-
-.subtitulo {
-    font-family: 'Handjet', sans-serif;
-    color: #8c52ff;
-    text-shadow: 0px 0px 20px #ff66c4;
-    margin-top: 0;
-    font-size: 1.5em; /* Tamaño de texto más pequeño que el título */
-}
-
-#info, #inscripcion {
-    margin-bottom: 20px;
-}
-
-footer {
-    margin-top: 30px;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
 button {
-    background: #fc9038;
+    background:  #85f876;
     color: #000;
     border: none;
     padding: 10px 20px;
     font-size: 1.5em;
     cursor: pointer;
-    font-family: 'Pixellet TH', sans-serif;
+    font-family: 'Pixellet TH', 'Handjet';
     text-transform: uppercase;
 }
 
@@ -68,7 +53,6 @@ button:hover {
     background: #85f876;
     color: #000;
 }
-
 
 button:hover {
     background: #85f876;
