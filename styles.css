@@ -1,6 +1,5 @@
 body {
     background-color: #000;
-
     color: #fff;
     font-family: 'Handjet';
     text-align: center;
@@ -10,9 +9,8 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 100vh; 
-    margin: 0; 
-    
+    height: 100vh;
+    margin: 0;
 }
 
 h1, h2 {
@@ -20,6 +18,14 @@ h1, h2 {
     color: #8c52ff;
     text-shadow: 2px 0px 15px #ff66c4;
     font-size: 33px;
+}
+
+.subtitulo {
+    font-family: 'Handjet', sans-serif;
+    color: #8c52ff;
+    text-shadow: 2px 0px 15px #ff66c4;
+    font-size: 33px;
+    margin-top: 10px; /* Ajuste el espacio debajo del título */
 }
 
 nav ul {
@@ -39,7 +45,7 @@ nav ul li a {
 }
 
 button {
-    background:  #85f876;
+    background: #85f876;
     color: #000;
     border: none;
     padding: 10px 20px;
@@ -53,6 +59,7 @@ button:hover {
     background: #85f876;
     color: #000;
 }
+
 
 button:hover {
     background: #85f876;
