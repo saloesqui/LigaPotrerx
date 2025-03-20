@@ -6,6 +6,8 @@ body {
     text-align: center;
     font-size: 25px;
     text-transform: uppercase;
+    background-image: https://github.com/saloesqui/LigaPotrerx/raw/main/fondo.png ('fondo.png'); 
+    background-size: cover;
 }
 
 h1, h2 {
