@@ -148,31 +148,14 @@ nav ul li a {
     }
 }
 
-/* Estilos para el botón "Volver al inicio" */
-.back-btn {
-    background-color: #8c52ff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.5em;
-    cursor: pointer;
-    font-family: 'Handjet', sans-serif;
-    margin-top: 30px;
-    text-transform: uppercase;
+/* Ocultar por defecto el botón "Volver al inicio" */
+.volver-inicio {
+    display: none;
 }
 
-.back-btn:hover {
-    background-color: #ff66c4;
-}
-
-/* Ocultar el botón "Volver al inicio" en otras secciones */
-#info, #inscripcion {
+/* Mostrar el botón en las secciones específicas */
+.show-button .volver-inicio {
     display: block;
-}
-
-#ekipxs .back-btn, #sobre .back-btn {
-    display: block; /* Mostrar en Ekipxs y Sobre la liga */
-    margin: 30px auto;
 }
 
 
