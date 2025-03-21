@@ -46,14 +46,14 @@
     </section>
 
     <!-- Sección "Ekipxs", el botón aparecerá aquí -->
-    <section class="ekipxs show-button">
+    <section class="ekipxs">
         <h2>Ekipxs</h2>
         <p>Contenido de Ekipxs...</p>
         <button class="volver-inicio">Volver al inicio</button>
     </section>
 
     <!-- Sección "Sobre la liga", el botón aparecerá aquí también -->
-    <section class="sobre-la-liga show-button">
+    <section class="sobre-la-liga">
         <h2>Sobre la Liga</h2>
         <p>Contenido de Sobre la liga...</p>
         <button class="volver-inicio">Volver al inicio</button>
@@ -62,20 +62,9 @@
     <footer>
         <p> 🏳️‍🌈 Seguinos en <a href="https://www.instagram.com/ligapotrerx" target="_blank">@ligapotrerx 🏳️‍🌈 </a></p>
     </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const volverButton = document.querySelector('.volver-inicio');
-            volverButton.style.display = 'none';
-
-            const sectionsConBoton = document.querySelectorAll('.show-button');
-            sectionsConBoton.forEach(section => {
-                section.querySelector('.volver-inicio').style.display = 'block';
-            });
-        });
-    </script>
 </body>
 </html>
+
 
 
 
