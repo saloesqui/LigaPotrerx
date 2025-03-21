@@ -148,15 +148,26 @@ nav ul li a {
     }
 }
 
-/* Ocultar por defecto el botón "Volver al inicio" */
+/* Estilo para el botón "Volver al inicio" */
 .volver-inicio {
+    background: #85f876;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-family: 'Pixellet TH', 'Handjet';
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.volver-inicio:hover {
+    background: #75e65b;
+}
+
+/* Estilo para ocultar el botón en la página de inicio */
+.inicio .volver-inicio {
     display: none;
 }
-
-/* Mostrar el botón en las secciones específicas */
-.show-button .volver-inicio {
-    display: block;
-}
-
 
 
