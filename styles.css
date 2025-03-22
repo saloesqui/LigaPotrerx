@@ -65,7 +65,7 @@ button:hover {
 
 /* Estilos para el footer */
 footer {
-    margin-top: auto; /* Asegura que el footer se quede al final */
+    margin-top: auto;
     padding: 20px 0;
 }
 
@@ -84,17 +84,27 @@ footer a {
 
 /* Imagen responsiva */
 .imagen-ekipxs {
-    width: 100%; /* Ajusta al tamaño de la pantalla */
-    max-width: 600px; /* No se hace más grande que 600px */
+    width: 100%;
+    max-width: 600px;
     display: block;
     margin: 20px auto;
+}
+
+/* Estilos para la imagen starterpack */
+.starterpack-img {
+    width: 80%; /* Ajuste del tamaño */
+    max-width: 600px; /* Máximo ancho */
+    display: block;
+    margin: 20px auto; /* Centrar */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
 }
 
 /* NAV - Hacerlo responsivo */
 nav ul {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Para que los elementos no se desborden en pantallas pequeñas */
+    flex-wrap: wrap;
     padding: 0;
     list-style: none;
 }
@@ -110,12 +120,12 @@ nav ul li a {
 /* **MEDIA QUERIES PARA PANTALLAS PEQUEÑAS** */
 @media screen and (max-width: 768px) {
     .ekipxs-container {
-        max-width: 90%; /* Reducimos el ancho para móviles */
+        max-width: 90%;
         padding: 10px;
     }
 
     nav ul {
-        flex-direction: column; /* Menú en columna para pantallas pequeñas */
+        flex-direction: column;
         align-items: center;
     }
 
@@ -124,7 +134,7 @@ nav ul li a {
     }
 
     h1 {
-        font-size: 24px; /* Tamaño más pequeño en móviles */
+        font-size: 24px;
     }
 
     p {
@@ -143,8 +153,13 @@ nav ul li a {
     }
 
     .imagen-ekipxs {
-        max-width: 90%; /* Imagen más pequeña en móviles */
+        max-width: 90%;
+    }
+
+    .starterpack-img {
+        width: 90%; /* Más pequeño en móviles */
     }
 }
+
 
 
