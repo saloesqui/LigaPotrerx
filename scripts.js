@@ -14,10 +14,15 @@ const timer = setInterval(() => {
     updateTimeDisplay(); // Llamamos a la función para actualizar la visualización
 }, 1000); // Ejecutamos cada segundo
 
+// Crear el contenedor para los dos contadores
+const contadoresContainer = document.createElement('div');
+contadoresContainer.style.textAlign = 'center'; // Asegura que los contadores se alineen al centro
+document.body.appendChild(contadoresContainer);
+
 // Mostrar tiempo en la página (en la pantalla)
 const timeDisplay = document.createElement('div');
 timeDisplay.classList.add('contador');
-document.body.appendChild(timeDisplay);
+contadoresContainer.appendChild(timeDisplay);
 
 // Función para actualizar el contador de tiempo en la pantalla
 function updateTimeDisplay() {
@@ -28,8 +33,8 @@ function updateTimeDisplay() {
 
 // Contador de visitas (mostrar en la pantalla)
 const visitDisplay = document.createElement('div');
-visitDisplay.classList.add('contador', 'contador-visitas');
-document.body.appendChild(visitDisplay);
+visitDisplay.classList.add('contador');
+contadoresContainer.appendChild(visitDisplay);
 
 // Mostrar las visitas en la pantalla
 function updateVisitDisplay() {
@@ -44,3 +49,4 @@ updateVisitDisplay();
 window.addEventListener('beforeunload', () => {
     clearInterval(timer);
 });
+
