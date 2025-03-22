@@ -100,7 +100,7 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 70px;
     flex-wrap: nowrap;
     margin-bottom: 60px; /* Aumenta la separación hacia abajo */
     margin-top: 20px; /* Aumenta la separación desde el título */
