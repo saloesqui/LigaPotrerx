@@ -92,8 +92,8 @@ footer a {
 
 /* Imagen "starterpack.jpg" en la sección "Sobre la liga" */
 .imagen-sobre {
-    width: 80%; /* Ajuste de tamaño */
-    max-width: 500px; /* No más grande de 500px */
+    width: 70%; /* Ajuste de tamaño, lo hago más pequeño */
+    max-width: 400px; /* No más grande de 400px */
     height: auto; /* Mantiene proporciones */
     display: block;
     margin: 20px auto; /* Centrado */
