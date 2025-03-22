@@ -1,75 +1,60 @@
+/* Estilos generales */
 body {
     background-color: #000;
     color: #fff;
-    font-family: 'Handjet';
+    font-family: 'Handjet', sans-serif;
     text-align: center;
     font-size: 26px;
     text-transform: uppercase;
     background-image: url('https://raw.githubusercontent.com/saloesqui/LigaPotrerx/main/fondo.png');
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: repeat-y;
-    height: 100vh; 
+    height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+/* Estilos para títulos y enlaces */
+h1, h2, .subtitulo, .reglamento-enlace {
+    font-family: 'Handjet', sans-serif;
+    color: #8c52ff;
+    text-shadow: 2px 0 15px #ff66c4;
+}
+
 h1, h2 {
-    font-family: 'Handjet', sans-serif;
-    color: #8c52ff;
-    text-shadow: 2px 0px 15px #ff66c4;
     font-size: 35px;
-}
-.reglamento-enlace {
-    font-family: 'Handjet', sans-serif;
-    color: #8c52ff;
-    text-shadow: 2px 0px 15px #ff66c4;
-    font-size: 35px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    text-decoration: none;  /* Remueve el subrayado */
-}
-
-.reglamento-enlace:hover {
-    color: #ff66c4;  /* Cambia de color cuando se pasa el mouse por encima */
-    text-decoration: underline;  /* Agrega subrayado en hover */
-}
-
-a {
-    color: #ff66c4; /* Rosa */
-    text-decoration: none; /* Elimina el subrayado del enlace */
-}
-
-a:hover {
-    color: #ff3385; /* Un rosa más oscuro al pasar el mouse */
 }
 
 .subtitulo {
-    font-family: 'Handjet', sans-serif;
-    color: #8c52ff;
-    text-shadow: 2px 0px 15px #ff66c4;
     font-size: 29px;
     margin-top: 10px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 10px;
-}
-
-nav ul li a {
-    color: #8c52ff;
+.reglamento-enlace {
+    font-size: 35px;
+    margin-top: 10px;
+    text-transform: uppercase;
     text-decoration: none;
-    font-size: 1.2em;
 }
 
+.reglamento-enlace:hover {
+    color: #ff66c4;
+    text-decoration: underline;
+}
+
+a {
+    color: #ff66c4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff3385;
+}
+
+/* Estilos para botones */
 button {
     background: #85f876;
     color: #000;
@@ -98,46 +83,44 @@ footer a {
     font-size: 1.2em;
 }
 
-/* Estilos para la sección ekipxs */
+/* Sección ekipxs */
 .ekipxs-container {
     max-width: 80%;
     margin: auto;
     text-align: center;
 }
 
-/* Imagen responsiva */
-.imagen-ekipxs {
+/* Estilos para imágenes */
+.imagen-ekipxs, .imagen-sobre {
     width: 100%;
-    max-width: 600px;
     display: block;
     margin: 20px auto;
 }
 
-/* Imagen "starterpack.jpg" en la sección "Sobre la liga" */
+.imagen-ekipxs {
+    max-width: 600px;
+}
+
 .imagen-sobre {
-    width: 74%; /* Ajusta el tamaño de la imagen */
-    max-width: 420px; /* Tamaño máximo */
-    height: auto; /* Mantiene las proporciones */
-    display: block;
-    margin: 20px auto; /* Centrado */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-    transition: box-shadow 0.3s ease; /* Efecto de transición solo para la sombra */
+    max-width: 420px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
 }
 
-/* Efecto hover para la imagen */
 .imagen-sobre:hover {
-    transform: scale(1.05); /* Aumento sutil del tamaño al pasar el ratón */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra más grande al hacer hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* NAV - Hacerlo responsivo */
+/* Estilos de navegación */
 nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0;
-    list-style: none;
 }
 
 nav ul li {
@@ -145,10 +128,12 @@ nav ul li {
 }
 
 nav ul li a {
+    color: #8c52ff;
+    text-decoration: none;
     font-size: 1.2em;
 }
 
-/* **MEDIA QUERIES PARA PANTALLAS PEQUEÑAS** */
+/* Media Queries */
 @media screen and (max-width: 768px) {
     .ekipxs-container {
         max-width: 90%;
@@ -172,14 +157,12 @@ nav ul li a {
         font-size: 18px;
     }
 
-    /* Ajuste de imagen para móviles */
     .imagen-sobre {
         width: 90%;
         max-width: 400px;
     }
 }
 
-/* **MEDIA QUERIES PARA PANTALLAS MUY PEQUEÑAS (Celulares pequeños)** */
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 20px;
@@ -193,12 +176,12 @@ nav ul li a {
         max-width: 90%;
     }
 
-    /* Reducción extra de la imagen starterpack en móviles pequeños */
     .imagen-sobre {
         width: 95%;
         max-width: 350px;
     }
 }
+
 
 
 
