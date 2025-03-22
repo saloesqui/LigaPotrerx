@@ -133,14 +133,20 @@ nav ul li a {
 }
 
 /* Contadores */
-#time-spent {
-    color: #ff66c4; /* Rosa */
-    font-size: 30px;
-    font-weight: bold;
-    text-shadow: 2px 0 15px #ff66c4; /* Sombra neon */
-    margin-top: 20px; /* Para separarlo un poco del contenido superior */
+.contador {
+    display: inline-block;
+    margin-right: 20px;
+    color: #ff66c4;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 10px #ff66c4, 0px 0px 15px #ff66c4;
+    font-family: 'Handjet', sans-serif;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
+.contador-visitas {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Media Queries */
@@ -196,7 +202,6 @@ nav ul li a {
         max-width: 350px;
     }
 }
-
 
 
 
