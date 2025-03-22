@@ -109,7 +109,7 @@ footer a {
 
 /* Estilos de imágenes de equipos */
 .imagen-equipo {
-    height: 290px;
+    height: 310px;
     width: auto;
     object-fit: cover;
     border-radius: 10px;
