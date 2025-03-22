@@ -89,6 +89,35 @@ footer a {
     margin: auto;
     text-align: center;
 }
+.campeonas {
+  display: flex;
+  justify-content: center; /* Centra las imágenes */
+  gap: 40px; /* Espacio entre las imágenes */
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.equipo {
+  flex: 1;
+  max-width: 300px; /* Limita el ancho de cada equipo */
+}
+
+.nombre-equipo {
+  font-family: 'Handjet', sans-serif;
+  color: #8c52ff;
+  font-size: 24px;
+  text-shadow: 2px 0px 15px #ff66c4;
+  margin-bottom: 10px;
+}
+
+.imagen-equipo {
+  width: 100%;
+  max-width: 250px; /* Ajusta el tamaño máximo de la imagen */
+  height: auto;
+  border-radius: 10px;
+}
+
 
 /* Imágenes */
 .imagen-ekipxs, .imagen-sobre {
