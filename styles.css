@@ -107,14 +107,14 @@ footer a {
 .nombre-equipo {
   font-family: 'Handjet', sans-serif;
   color: #8c52ff;
-  font-size: 24px;
+  font-size: 30px;
   text-shadow: 2px 0px 15px #ff66c4;
   margin-bottom: 10px;
 }
 
 .imagen-equipo {
   width: 100%;
-  max-width: 250px; /* Ajusta el tamaño máximo */
+  max-width: 270px; /* Ajusta el tamaño máximo */
   height: auto;
   border-radius: 10px;
 
