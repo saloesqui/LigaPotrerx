@@ -91,7 +91,7 @@ footer a {
 
 .titulo-campeonas {
     font-size: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     white-space: nowrap;
 }
 
@@ -103,7 +103,7 @@ footer a {
     gap: 70px;
     flex-wrap: nowrap;
     margin-bottom: 60px; /* Aumenta la separación hacia abajo */
-    margin-top: 20px; /* Aumenta la separación desde el título */
+    margin-top: 30px; /* Aumenta la separación desde el título */
     
 }
 
