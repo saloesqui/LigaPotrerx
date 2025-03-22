@@ -90,14 +90,14 @@ footer a {
     margin: 20px auto;
 }
 
-/* Estilos para la imagen starterpack */
-.starterpack-img {
-    width: 80%; /* Ajuste del tamaño */
-    max-width: 600px; /* Máximo ancho */
+/* Imagen "starterpack.jpg" en la sección "Sobre la liga" */
+.imagen-sobre {
+    width: 80%; /* Ajuste de tamaño */
+    max-width: 500px; /* No más grande de 500px */
+    height: auto; /* Mantiene proporciones */
     display: block;
-    margin: 20px auto; /* Centrar */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    margin: 20px auto; /* Centrado */
+    border-radius: 10px; /* Bordes redondeados (opcional) */
 }
 
 /* NAV - Hacerlo responsivo */
@@ -140,6 +140,12 @@ nav ul li a {
     p {
         font-size: 18px;
     }
+
+    /* Ajuste de imagen para móviles */
+    .imagen-sobre {
+        width: 90%;
+        max-width: 400px;
+    }
 }
 
 /* **MEDIA QUERIES PARA PANTALLAS MUY PEQUEÑAS (Celulares pequeños)** */
@@ -156,10 +162,13 @@ nav ul li a {
         max-width: 90%;
     }
 
-    .starterpack-img {
-        width: 90%; /* Más pequeño en móviles */
+    /* Reducción extra de la imagen starterpack en móviles pequeños */
+    .imagen-sobre {
+        width: 95%;
+        max-width: 350px;
     }
 }
+
 
 
 
