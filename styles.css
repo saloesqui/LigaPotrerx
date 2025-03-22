@@ -97,9 +97,9 @@ footer a {
 .titulo-campeonas {
   font-family: 'Handjet', sans-serif;
   color: #8c52ff;
-  font-size: 28px;
-  text-shadow: 2px 0px 15px #ff66c4;
-  margin-bottom: 10px; /* Menos espacio entre título e imágenes */
+  font-size: 35px;
+  text-shadow: 3px 0px 16px #ff66c4;
+  margin-bottom: 20px; /* Menos espacio entre título e imágenes */
   white-space: nowrap; /* Evita que el título se divida en dos líneas */
 }
 
@@ -112,7 +112,7 @@ footer a {
 }
 
 .imagen-equipo {
-  height: 200px; /* Altura fija para ambas imágenes */
+  height: 230px; /* Altura fija para ambas imágenes */
   width: auto; /* Mantiene la proporción original */
   object-fit: cover; /* Ajusta la imagen sin deformarla */
   border-radius: 10px;
