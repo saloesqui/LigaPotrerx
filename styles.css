@@ -99,13 +99,16 @@ footer a {
   color: #8c52ff;
   font-size: 28px;
   text-shadow: 2px 0px 15px #ff66c4;
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* Menos espacio entre título e imágenes */
+  white-space: nowrap; /* Evita que el título se divida en dos líneas */
 }
 
 .equipos-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 40px; /* Espaciado entre imágenes */
+  flex-wrap: nowrap; /* Evita que las imágenes se vayan a otra línea */
 }
 
 .imagen-equipo {
