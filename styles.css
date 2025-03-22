@@ -112,6 +112,16 @@ footer a {
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
+/* Ajuste de margen superior e inferior para el logo */
+img[src="https://github.com/saloesqui/LigaPotrerx/raw/main/logo.png"] {
+    margin-top: 10px;  /* Ajusta este valor según lo que necesites */
+    margin-bottom: 10px;  /* Ajusta este valor según lo que necesites */
+}
+
+/* También puedes ajustar el margen o padding del texto de "II edición activada" */
+h2 {
+    margin-top: 5px;  /* Ajusta este valor si es necesario */
+}
 
 /* Navegación */
 nav ul {
