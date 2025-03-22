@@ -102,7 +102,9 @@ footer a {
     align-items: center;
     gap: 60px;
     flex-wrap: nowrap;
-     margin-bottom: 50px; /* Aumenta la separación hacia abajo */
+    margin-bottom: 60px; /* Aumenta la separación hacia abajo */
+    margin-top: 20px; /* Aumenta la separación desde el título */
+    
 }
 
 /* Estilos de imágenes de equipos */
