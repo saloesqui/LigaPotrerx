@@ -92,12 +92,19 @@ footer a {
 
 /* Imagen "starterpack.jpg" en la sección "Sobre la liga" */
 .imagen-sobre {
-    width: 70%; /* Ajuste de tamaño, lo hago más pequeño */
-    max-width: 400px; /* No más grande de 400px */
-    height: auto; /* Mantiene proporciones */
+    width: 74%; /* Ajusta el tamaño de la imagen */
+    max-width: 420px; /* Tamaño máximo */
+    height: auto; /* Mantiene las proporciones */
     display: block;
     margin: 20px auto; /* Centrado */
-    border-radius: 10px; /* Bordes redondeados (opcional) */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: box-shadow 0.3s ease; /* Efecto de transición solo para la sombra */
+}
+
+/* Efecto hover para la imagen */
+.imagen-sobre:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra más grande al hacer hover */
 }
 
 /* NAV - Hacerlo responsivo */
