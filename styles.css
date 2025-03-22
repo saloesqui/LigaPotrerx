@@ -21,11 +21,11 @@ body {
 h1, h2, .subtitulo, .reglamento-enlace {
     font-family: 'Handjet', sans-serif;
     color: #8c52ff;
-    text-shadow: 2px 0 15px #ff66c4;
+    text-shadow: 3px 0 15px #ff66c4;
 }
 
 h1, h2 {
-    font-size: 35px;
+    font-size: 36px;
 }
 
 .subtitulo {
@@ -34,7 +34,7 @@ h1, h2 {
 }
 
 .reglamento-enlace {
-    font-size: 35px;
+    font-size: 34px;
     margin-top: 10px;
     text-transform: uppercase;
     text-decoration: none;
