@@ -37,6 +37,14 @@ h1, h2 {
     text-decoration: underline;  /* Agrega subrayado en hover */
 }
 
+a {
+    color: #ff66c4; /* Rosa */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+a:hover {
+    color: #ff3385; /* Un rosa más oscuro al pasar el mouse */
+}
 
 .subtitulo {
     font-family: 'Handjet', sans-serif;
