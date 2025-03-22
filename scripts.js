@@ -23,7 +23,7 @@ document.body.appendChild(timeDisplay);
 function updateTimeDisplay() {
     const minutes = Math.floor(timeSpent / 60); // Obtener minutos
     const seconds = timeSpent % 60; // Obtener segundos
-    timeDisplay.innerHTML = `Tiempo en la página: ${minutes}m ${seconds}s`;
+    timeDisplay.innerHTML = `Tiempo: ${minutes}m ${seconds}s`;
 }
 
 // Contador de visitas (mostrar en la pantalla)
@@ -34,13 +34,17 @@ document.body.appendChild(visitDisplay);
 // Mostrar las visitas en la pantalla
 function updateVisitDisplay() {
     const visitas = localStorage.getItem('visitas');
-    visitDisplay.innerHTML = `Visitas a la página: ${visitas}`;
+    visitDisplay.innerHTML = `Visitas: ${visitas}`;
 }
 
 // Llamamos a la función para mostrar las visitas al cargar la página
 updateVisitDisplay();
 
 // Detener el contador cuando el usuario abandone la página
+window.addEventListener('beforeunload', () => {
+    clearInterval(timer);
+});
+
 window.addEventListener('beforeunload', () => {
     clearInterval(timer);
 });
