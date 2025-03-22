@@ -90,34 +90,30 @@ footer a {
     text-align: center;
 }
 .campeonas {
-  display: flex;
-  justify-content: center; /* Centra las imágenes horizontalmente */
-  align-items: center; /* Alinea verticalmente */
-  gap: 40px; /* Espacio entre imágenes */
   text-align: center;
   margin-top: 40px;
 }
 
-.equipo {
-  display: flex;
-  flex-direction: column; /* Organiza texto arriba, imagen abajo */
-  align-items: center; /* Centra el contenido de cada equipo */
-}
-
-.nombre-equipo {
+.titulo-campeonas {
   font-family: 'Handjet', sans-serif;
   color: #8c52ff;
-  font-size: 30px;
+  font-size: 28px;
   text-shadow: 2px 0px 15px #ff66c4;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.equipos-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Espaciado entre imágenes */
 }
 
 .imagen-equipo {
   width: 100%;
-  max-width: 270px; /* Ajusta el tamaño máximo */
+  max-width: 250px;
   height: auto;
   border-radius: 10px;
-
+}
 }
 
 
