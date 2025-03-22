@@ -104,6 +104,7 @@ footer a {
 
 /* Efecto hover para la imagen */
 .imagen-sobre:hover {
+    transform: scale(1.05); /* Aumento sutil del tamaño al pasar el ratón */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra más grande al hacer hover */
 }
 
