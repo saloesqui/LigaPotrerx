@@ -112,7 +112,7 @@ footer a {
 }
 
 .imagen-equipo {
-  height: 230px; /* Altura fija para ambas imágenes */
+  height: 250px; /* Altura fija para ambas imágenes */
   width: auto; /* Mantiene la proporción original */
   object-fit: cover; /* Ajusta la imagen sin deformarla */
   border-radius: 10px;
