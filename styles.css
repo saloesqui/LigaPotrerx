@@ -102,14 +102,14 @@ footer a {
     align-items: center;
     gap: 70px;
     flex-wrap: nowrap;
-    margin-bottom: 60px; /* Aumenta la separación hacia abajo */
+    margin-bottom: 70px; /* Aumenta la separación hacia abajo */
     margin-top: 30px; /* Aumenta la separación desde el título */
     
 }
 
 /* Estilos de imágenes de equipos */
 .imagen-equipo {
-    height: 270px;
+    height: 290px;
     width: auto;
     object-fit: cover;
     border-radius: 10px;
