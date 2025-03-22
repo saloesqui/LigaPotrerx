@@ -108,15 +108,15 @@ footer a {
 
 /* Estilos de imágenes de equipos */
 .imagen-equipo {
-    height: auto; /* Cambiar de 310px a auto para mantener la proporción */
-    width: 100%;
-    object-fit: contain; /* Asegura que la imagen se ajuste sin cortar */
+    height: 310px;
+    width: auto;
+    object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out; /* Agrega efecto de crecimiento */
 }
 
 .imagen-equipo:hover {
-    transform: scale(1.05); /* Suaviza el efecto hover */
+    transform: scale(1.1); /* Efecto hover */
 }
 
 /* Imágenes generales */
@@ -124,7 +124,6 @@ footer a {
     width: 100%;
     display: block;
     margin: 20px auto;
-    object-fit: contain; /* Asegura que las imágenes no se corten en pantallas pequeñas */
 }
 
 .imagen-ekipxs {
@@ -219,6 +218,18 @@ nav ul li a {
         font-size: 1.2em;
         margin-right: 10px;
     }
+
+    /* Ajustes en la sección de equipos para pantallas medianas y móviles */
+    .equipos-container {
+        flex-direction: column; /* Apilar las imágenes verticalmente en pantallas más pequeñas */
+        gap: 30px;  /* Reducir el espacio entre las imágenes */
+        margin-top: 50px;
+    }
+
+    .imagen-equipo {
+        width: 80%;  /* Asegura que las imágenes no ocupen todo el ancho */
+        max-width: 250px; /* Limita el tamaño máximo de las imágenes */
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -237,5 +248,14 @@ nav ul li a {
     .imagen-sobre {
         width: 95%;
         max-width: 350px;
+    }
+
+    /* Ajustes adicionales para mejorar la visualización en móviles */
+    .equipos-container {
+        gap: 20px;  /* Reduce el espacio entre las imágenes */
+    }
+
+    .imagen-equipo {
+        max-width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
     }
 }
