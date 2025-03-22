@@ -91,16 +91,17 @@ footer a {
 }
 .campeonas {
   display: flex;
-  justify-content: center; /* Centra las imágenes */
-  gap: 40px; /* Espacio entre las imágenes */
-  align-items: center;
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center; /* Alinea verticalmente */
+  gap: 40px; /* Espacio entre imágenes */
   text-align: center;
   margin-top: 40px;
 }
 
 .equipo {
-  flex: 1;
-  max-width: 300px; /* Limita el ancho de cada equipo */
+  display: flex;
+  flex-direction: column; /* Organiza texto arriba, imagen abajo */
+  align-items: center; /* Centra el contenido de cada equipo */
 }
 
 .nombre-equipo {
@@ -113,9 +114,10 @@ footer a {
 
 .imagen-equipo {
   width: 100%;
-  max-width: 250px; /* Ajusta el tamaño máximo de la imagen */
+  max-width: 250px; /* Ajusta el tamaño máximo */
   height: auto;
   border-radius: 10px;
+
 }
 
 
