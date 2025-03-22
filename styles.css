@@ -1,15 +1,11 @@
 /* Estilos generales */
 body {
-    background-color: #000;
+    background: #000 url('https://raw.githubusercontent.com/saloesqui/LigaPotrerx/main/fondo.png') center/cover repeat-y;
     color: #fff;
     font-family: 'Handjet', sans-serif;
     text-align: center;
     font-size: 26px;
     text-transform: uppercase;
-    background-image: url('https://raw.githubusercontent.com/saloesqui/LigaPotrerx/main/fondo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat-y;
     height: 100vh;
     margin: 0;
     display: flex;
@@ -36,7 +32,6 @@ h1, h2 {
 .reglamento-enlace {
     font-size: 34px;
     margin-top: 10px;
-    text-transform: uppercase;
     text-decoration: none;
 }
 
@@ -68,7 +63,6 @@ button {
 
 button:hover {
     background: #85f876;
-    color: #000;
 }
 
 /* Footer */
@@ -89,38 +83,41 @@ footer a {
     margin: auto;
     text-align: center;
 }
+
 .campeonas {
-  text-align: center;
-  margin-top: 40px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .titulo-campeonas {
-  font-family: 'Handjet', sans-serif;
-  color: #8c52ff;
-  font-size: 35px;
-  text-shadow: 3px 0px 16px #ff66c4;
-  margin-bottom: 20px; /* Menos espacio entre título e imágenes */
-  white-space: nowrap; /* Evita que el título se divida en dos líneas */
+    font-size: 35px;
+    margin-bottom: 20px;
+    white-space: nowrap;
 }
 
+/* Contenedor de imágenes de equipos */
 .equipos-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px; /* Espaciado entre imágenes */
-  flex-wrap: nowrap; /* Evita que las imágenes se vayan a otra línea */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: nowrap;
 }
 
+/* Estilos de imágenes de equipos */
 .imagen-equipo {
-  height: 250px; /* Altura fija para ambas imágenes */
-  width: auto; /* Mantiene la proporción original */
-  object-fit: cover; /* Ajusta la imagen sin deformarla */
-  border-radius: 10px;
-}
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Agrega efecto de crecimiento */
 }
 
+.imagen-equipo:hover {
+    transform: scale(1.1); /* Efecto hover */
+}
 
-/* Imágenes */
+/* Imágenes generales */
 .imagen-ekipxs, .imagen-sobre {
     width: 100%;
     display: block;
@@ -135,22 +132,18 @@ footer a {
     max-width: 420px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .imagen-sobre:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
-/* Ajuste de margen superior e inferior para el logo */
-img[src="https://github.com/saloesqui/LigaPotrerx/raw/main/logo.png"] {
-    margin-top: 0px;  /* Ajusta este valor según lo que necesites */
-    margin-bottom: 0px;  /* Ajusta este valor según lo que necesites */
-}
 
-/* También puedes ajustar el margen o padding del texto de "II edición activada" */
-h2 {
-    margin-top: 0px;  /* Ajusta este valor si es necesario */
+/* Ajuste de margen para el logo */
+img[src="https://github.com/saloesqui/LigaPotrerx/raw/main/logo.png"] {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* Navegación */
@@ -173,30 +166,21 @@ nav ul li a {
 }
 
 /* Contadores */
-/* Contadores */
 .contador {
-    display: inline-block; /* Hace que los contadores estén en línea */
-    margin-right: 20px; /* Espacio entre los contadores */
+    display: inline-block;
+    margin-right: 20px;
     color: #ff66c4;
     font-size: 1.3em;
     text-shadow: 0px 0px 9px #ff66c4, 0px 0px 13px #ff66c4;
-    font-family: 'Handjet', sans-serif;
     padding: 5px 10px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.5);
-    text-align: center; /* Centra el texto dentro de los contadores */
+    text-align: center;
 }
 
-/* Asegura que los contadores aparezcan en la misma fila */
 #visit-count, #time-spent {
     display: inline-block;
-    margin-right: 20px; /* Espacio entre los dos contadores */
-}
-
-}
-
-.contador-visitas {
-    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
 }
 
 /* Media Queries */
@@ -252,8 +236,6 @@ nav ul li a {
         max-width: 350px;
     }
 }
-
-
 
 
 
