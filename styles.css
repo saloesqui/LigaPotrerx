@@ -337,6 +337,12 @@ nav ul li a {
         width: 80%;  /* Asegura que las imágenes no ocupen todo el ancho */
         max-width: 250px; /* Limita el tamaño máximo de las imágenes */
     }
+    /* Estilo para el footer en tablas.html */
+#tablas footer {
+    font-family: 'Handjet', sans-serif; /* Asegura que la tipografía sea Handjet */
+    font-weight: bold; /* Asegura que el texto esté en negrita */
+}
+
 }
 
 @media screen and (max-width: 480px) {
