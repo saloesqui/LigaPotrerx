@@ -197,8 +197,51 @@ nav ul li a {
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacarlo */
 }
-body {
-    background-color: red; /* Esto cambiaría el color de fondo a rojo, pruébalo para ver si el CSS se aplica */
+/* Sección Tablas */
+#tablas .imagen-container img {
+    width: 100%;
+    max-width: 1000px; /* O el tamaño máximo deseado */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados si lo deseas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos de transición */
+}
+
+#tablas .imagen-container img:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Aumentar sombra en hover */
+}
+
+/* Sección Fixture */
+#fixture .imagen-container img {
+    width: 100%;
+    max-width: 1000px; /* O el tamaño máximo deseado */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados si lo deseas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos de transición */
+}
+
+#fixture .imagen-container img:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Aumentar sombra en hover */
+}
+
+/* Sección Resultados */
+#resultados .imagen-container img {
+    width: 100%;
+    max-width: 1000px; /* O el tamaño máximo deseado */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados si lo deseas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos de transición */
+}
+
+#resultados .imagen-container img:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Aumentar sombra en hover */
+}
+
 }
 
 
