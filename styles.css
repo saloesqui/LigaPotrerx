@@ -59,8 +59,7 @@ button {
     cursor: url(lightning-bolt-outline.svg) 12 12, auto;
     font-family: 'VT323', 'Handjet';
     text-transform: uppercase;
-    margin-top: 20px;  /* Agrega un margen superior */
-    margin-bottom: 30px;  /* Agrega un margen inferior */
+    margin: 20px 0 30px;
 }
 
 button:hover {
@@ -71,6 +70,8 @@ button:hover {
 footer {
     margin-top: auto;
     padding: 20px 0;
+    font-family: 'Handjet', sans-serif;
+    font-weight: bold;
 }
 
 footer a {
@@ -104,8 +105,7 @@ footer a {
     align-items: center;
     gap: 70px;
     flex-wrap: nowrap;
-    margin-bottom: 70px; /* Aumenta la separación hacia abajo */
-    margin-top: 30px; /* Aumenta la separación desde el título */
+    margin: 30px 0 70px;
 }
 
 /* Estilos de imágenes de equipos */
@@ -114,11 +114,11 @@ footer a {
     width: auto;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out; /* Agrega efecto de crecimiento */
+    transition: transform 0.3s ease-in-out;
 }
 
 .imagen-equipo:hover {
-    transform: scale(1.1); /* Efecto hover */
+    transform: scale(1.1);
 }
 
 /* Imágenes generales */
@@ -146,8 +146,7 @@ footer a {
 
 /* Ajuste de margen para el logo */
 img[src="https://github.com/saloesqui/LigaPotrerx/raw/main/logo.png"] {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0;
 }
 
 /* Navegación */
@@ -175,7 +174,7 @@ nav ul li a {
     margin-right: 20px;
     color: #ff66c4;
     font-size: 1.3em;
-    text-shadow: 0px 0px 9px #ff66c4, 0px 0px 13px #ff66c4;
+    text-shadow: 0 0 9px #ff66c4, 0 0 13px #ff66c4;
     padding: 5px 10px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -189,17 +188,18 @@ nav ul li a {
 
 /* Estilo específico para la línea "Fiesta Potrerx en construcción" */
 #info h3.subtitulo {
-    font-size: 36px; /* Tamaño más grande */
+    font-size: 36px;
     font-weight: bold;
-    background-color: #ff66c4; /* Fondo resaltado */
+    background-color: #ff66c4;
     color: #fff;
-    padding: 10px 20px; /* Espacio adicional alrededor del texto */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacarlo */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 /* Sección Tablas */
 #tablas {
-    font-family: 'Handjet', sans-serif; /* Aseguramos que toda la sección Tablas tenga la tipografía Handjet */
+    font-family: 'Handjet', sans-serif;
 }
 
 #tablas .imagen-container {
@@ -213,7 +213,6 @@ nav ul li a {
     margin-bottom: 30px;
     white-space: nowrap;
     text-align: center;
-    font-family: 'Handjet', sans-serif; /* Aplicando Handjet al título */
 }
 
 /* Contenedor de imágenes */
@@ -223,8 +222,7 @@ nav ul li a {
     align-items: center;
     gap: 70px;
     flex-wrap: nowrap;
-    margin-bottom: 70px; /* Aumenta la separación hacia abajo */
-    margin-top: 30px; /* Aumenta la separación desde el título */
+    margin: 30px 0 70px;
 }
 
 /* Estilos de imágenes */
@@ -233,11 +231,11 @@ nav ul li a {
     width: auto;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out; /* Agrega efecto de crecimiento */
+    transition: transform 0.3s ease-in-out;
 }
 
 .tablas-imagen:hover {
-    transform: scale(1.1); /* Efecto hover */
+    transform: scale(1.1);
 }
 
 /* Imágenes generales */
@@ -268,18 +266,18 @@ nav ul li a {
 #tablas .imagen-container img,
 #resultados .imagen-container img {
     width: 100%;
-    max-width: 1000px; /* O el tamaño máximo deseado */
+    max-width: 1000px;
     height: auto;
-    border-radius: 10px; /* Bordes redondeados si lo deseas */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos de transición */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #tablas .imagen-container img:hover,
 #fixture .imagen-container img:hover,
 #resultados .imagen-container img:hover {
-    transform: scale(1.05); /* Efecto al pasar el mouse */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Aumentar sombra en hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Media Queries */
@@ -326,23 +324,23 @@ nav ul li a {
         margin-right: 10px;
     }
 
-    /* Ajustes en la sección de equipos para pantallas medianas y móviles */
+    /* Ajustes en la sección de equipos */
     .equipos-container {
-        flex-direction: column; /* Apilar las imágenes verticalmente en pantallas más pequeñas */
-        gap: 30px;  /* Reducir el espacio entre las imágenes */
+        flex-direction: column;
+        gap: 30px;
         margin-top: 50px;
     }
 
     .imagen-equipo {
-        width: 80%;  /* Asegura que las imágenes no ocupen todo el ancho */
-        max-width: 250px; /* Limita el tamaño máximo de las imágenes */
+        width: 80%;
+        max-width: 250px;
     }
-    /* Estilo para el footer en tablas.html */
-#tablas footer {
-    font-family: 'Handjet', sans-serif; /* Asegura que la tipografía sea Handjet */
-    font-weight: bold; /* Asegura que el texto esté en negrita */
-}
 
+    /* Estilo para el footer en tablas.html */
+    #tablas footer {
+        font-family: 'Handjet', sans-serif;
+        font-weight: bold;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -363,13 +361,13 @@ nav ul li a {
         max-width: 350px;
     }
 
-    /* Ajustes adicionales para mejorar la visualización en móviles */
     .equipos-container {
-        gap: 20px;  /* Reduce el espacio entre las imágenes */
+        gap: 20px;
     }
 
     .imagen-equipo {
-        max-width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
+        max-width: 100%;
     }
 }
+
 
