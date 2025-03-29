@@ -198,6 +198,10 @@ nav ul li a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacarlo */
 }
 /* Sección Tablas */
+#tablas {
+    font-family: 'Handjet', sans-serif; /* Aseguramos que toda la sección Tablas tenga la tipografía Handjet */
+}
+
 #tablas .imagen-container {
     max-width: 80%;
     margin: auto;
@@ -209,6 +213,7 @@ nav ul li a {
     margin-bottom: 30px;
     white-space: nowrap;
     text-align: center;
+    font-family: 'Handjet', sans-serif; /* Aplicando Handjet al título */
 }
 
 /* Contenedor de imágenes */
