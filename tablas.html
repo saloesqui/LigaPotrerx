@@ -3,37 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas, Fixture y Resultados</title>
-    
-    <!-- Vincula tu archivo CSS -->
-    <link rel="stylesheet" href="ruta/a/tu/estilos.css">
+    <title>Tablas y Fixture</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para la nueva sección Tablas y Fixture */
+        #tablas-fixture {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .subseccion {
+            margin-top: 20px;
+        }
+
+        .subseccion img {
+            width: 80%;  /* Ajustar el tamaño de las imágenes según lo que necesites */
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .subseccion h3 {
+            font-size: 1.6em;
+            color: #ff66c4;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo del footer (esto puede ir en un archivo CSS global) */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ff66c4;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-content p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <section class="tablas-fixture">
-        <div class="seccion tablas">
-            <h2>Tablas</h2>
-            <!-- Espacio para la imagen de Canva de Tablas -->
-            <div class="imagen-tabla">
-                <img src="ruta/a/tu/imagen_tabla.png" alt="Tablas">
+    <header>
+        <h1>Tablas y Fixture de la Liga</h1>
+    </header>
+
+    <main>
+        <div class="seccion" id="tablas-fixture">
+            <h2>Tablas y Fixture</h2>
+
+            <!-- Sección Fixture -->
+            <div class="subseccion">
+                <h3>Fixture</h3>
+                <img src="images/fixture.jpg" alt="Fixture de la liga" id="fixture">
+                <!-- Aquí se actualizaría la imagen del fixture -->
+            </div>
+
+            <!-- Sección Tablas -->
+            <div class="subseccion">
+                <h3>Tablas</h3>
+                <img src="images/tablas.jpg" alt="Tablas de posiciones" id="tablas">
+                <!-- Aquí se actualizaría la imagen de las tablas -->
+            </div>
+
+            <!-- Sección Resultados -->
+            <div class="subseccion">
+                <h3>Resultados</h3>
+                <img src="images/resultados.jpg" alt="Resultados de partidos" id="resultados">
+                <!-- Aquí se actualizaría la imagen de los resultados -->
             </div>
         </div>
-        
-        <div class="seccion fixture">
-            <h2>Fixture</h2>
-            <!-- Espacio para la imagen de Canva de Fixture -->
-            <div class="imagen-fixture">
-                <img src="ruta/a/tu/imagen_fixture.png" alt="Fixture">
-            </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Liga Deportiva. Todos los derechos reservados.</p>
+            <p><a href="ekipxs.html">Ekipxs</a> | <a href="sobre.html">Sobre Nosotros</a> | <a href="index.html">Inicio</a></p>
         </div>
-        
-        <div class="seccion resultados">
-            <h2>Resultados</h2>
-            <!-- Espacio para la imagen de Canva de Resultados -->
-            <div class="imagen-resultados">
-                <img src="ruta/a/tu/imagen_resultados.png" alt="Resultados">
-            </div>
-        </div>
-    </section>
+    </footer>
+</body>
+</html>
+
 </body>
 </html>
 
