@@ -198,36 +198,69 @@ nav ul li a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacarlo */
 }
 /* Sección Tablas */
-#tablas .imagen-container img {
-    width: 100%;
-    max-width: 1000px; /* O el tamaño máximo deseado */
-    height: auto;
-    border-radius: 10px; /* Bordes redondeados si lo deseas */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos de transición */
+#tablas .imagen-container {
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
 }
 
-#tablas .imagen-container img:hover {
-    transform: scale(1.05); /* Efecto al pasar el mouse */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Aumentar sombra en hover */
+.tablas-titulo {
+    font-size: 35px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* Contenedor de imágenes */
+.tablas-imagen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: nowrap;
+    margin-bottom: 70px; /* Aumenta la separación hacia abajo */
+    margin-top: 30px; /* Aumenta la separación desde el título */
+}
+
+/* Estilos de imágenes */
+.tablas-imagen {
+    height: 310px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Agrega efecto de crecimiento */
+}
+
+.tablas-imagen:hover {
+    transform: scale(1.1); /* Efecto hover */
+}
+
+/* Imágenes generales */
+.imagen-tablas, .imagen-sobre-tablas {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+.imagen-tablas {
+    max-width: 600px;
+}
+
+.imagen-sobre-tablas {
+    max-width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen-sobre-tablas:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Sección Fixture */
-#fixture .imagen-container img {
-    width: 100%;
-    max-width: 1000px; /* O el tamaño máximo deseado */
-    height: auto;
-    border-radius: 10px; /* Bordes redondeados si lo deseas */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos de transición */
-}
-
-#fixture .imagen-container img:hover {
-    transform: scale(1.05); /* Efecto al pasar el mouse */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Aumentar sombra en hover */
-}
-
-/* Sección Resultados */
+#fixture .imagen-container img,
+#tablas .imagen-container img,
 #resultados .imagen-container img {
     width: 100%;
     max-width: 1000px; /* O el tamaño máximo deseado */
@@ -237,14 +270,12 @@ nav ul li a {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos de transición */
 }
 
+#tablas .imagen-container img:hover,
+#fixture .imagen-container img:hover,
 #resultados .imagen-container img:hover {
     transform: scale(1.05); /* Efecto al pasar el mouse */
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Aumentar sombra en hover */
 }
-
-}
-
-
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
