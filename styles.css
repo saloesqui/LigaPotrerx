@@ -197,55 +197,11 @@ nav ul li a {
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacarlo */
 }
-
-/* Sección tablas-fixture */
-.tablas-fixture {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 20px;
-    gap: 40px;
-    flex-wrap: wrap;
+body {
+    background-color: red; /* Esto cambiaría el color de fondo a rojo, pruébalo para ver si el CSS se aplica */
 }
 
-/* Sección general de cada uno */
-.seccion {
-    flex: 1;
-    min-width: 250px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
 
-h2 {
-    color: #8c52ff;
-    font-size: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Estilo para las imágenes debajo de cada sección */
-.imagen-tabla, .imagen-fixture, .imagen-resultados {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.imagen-tabla img, .imagen-fixture img, .imagen-resultados img {
-    width: 100%;
-    max-width: 800px;  /* Ajusta el tamaño máximo según lo necesites */
-    height: auto;
-    border-radius: 15px;  /* Bordes redondeados */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Sombra sutil */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transición suave */
-}
-
-/* Efecto de hover en las imágenes */
-.imagen-tabla img:hover, .imagen-fixture img:hover, .imagen-resultados img:hover {
-    transform: scale(1.05);  /* Aumento de tamaño en hover */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);  /* Sombra más intensa */
-}
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
