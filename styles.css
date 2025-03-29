@@ -190,6 +190,17 @@ nav ul li a {
     margin-right: 20px;
 }
 
+/* Estilo específico para la línea "Fiesta Potrerx en construcción" */
+#info h3.subtitulo {
+    font-size: 32px; /* Tamaño más grande */
+    font-weight: bold;
+    background-color: #ff66c4; /* Fondo resaltado */
+    color: #fff;
+    padding: 10px 20px; /* Espacio adicional alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacarlo */
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
     .ekipxs-container {
@@ -264,3 +275,4 @@ nav ul li a {
         max-width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
     }
 }
+
