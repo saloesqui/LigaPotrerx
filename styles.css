@@ -1,8 +1,8 @@
 /* Variables personalizables */
 :root {
     --tam-imagen-equipo: 310px;
-    --tam-imagen-tabla: 180px;
-    --tam-imagen-resultado: 180px;
+    --tam-imagen-tabla: 150px;
+    --tam-imagen-resultado: 150px;
 }
 
 /* Estilos generales */
@@ -269,7 +269,8 @@ nav ul li a {
 }
 
 /* Galería de imágenes de resultados */
-.imagenes-resultados {
+.imagenes-resultados,
+.imagenes-tablas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -277,28 +278,17 @@ nav ul li a {
     margin: 40px 0;
 }
 
-.imagenes-resultados img {
-    width: var(--tam-imagen-resultado);
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
-    transition: transform 0.3s ease-in-out;
-}
-
-.imagenes-resultados img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-}
-
-/* Imágenes de tablas */
+.imagenes-resultados img,
 .imagenes-tablas img {
     width: var(--tam-imagen-resultado);
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
     transition: transform 0.3s ease-in-out;
+}
 
-    .imagenes-tablas img:hover {
+.imagenes-resultados img:hover,
+.imagenes-tablas img:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
@@ -351,7 +341,7 @@ nav ul li a {
         flex-direction: column;
         gap: 30px;
         margin-top: 50px;
-        overflow-x: hidden; /* Oculta scroll horizontal en mobile */
+        overflow-x: hidden;
     }
 
     .imagen-equipo {
@@ -393,3 +383,4 @@ nav ul li a {
         max-width: 100%;
     }
 }
+
