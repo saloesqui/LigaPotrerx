@@ -1,3 +1,10 @@
+/* Variables personalizables */
+:root {
+    --tam-imagen-equipo: 310px;
+    --tam-imagen-tabla: 200px;
+    --tam-imagen-resultado: 200px;
+}
+
 /* Estilos generales */
 body {
     background: #000 url('https://raw.githubusercontent.com/saloesqui/LigaPotrerx/main/fondo.png') center/cover repeat-y;
@@ -112,7 +119,7 @@ footer a {
 
 /* Estilos de imágenes de equipos */
 .imagen-equipo {
-    height: 310px;
+    height: var(--tam-imagen-equipo);
     width: auto;
     object-fit: cover;
     border-radius: 10px;
@@ -215,15 +222,6 @@ nav ul li a {
     text-align: center;
 }
 
-.tablas-imagen-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    flex-wrap: wrap;
-    margin: 30px 0 70px;
-}
-
 /* Contenedor Fixture y Resultados */
 #fixture .imagen-container,
 #resultados .imagen-container,
@@ -241,7 +239,7 @@ nav ul li a {
 #tablas .imagen-container img,
 #fixture .imagen-container img,
 #resultados .imagen-container img {
-    width: 120px;
+    width: var(--tam-imagen-tabla);
     height: auto;
     object-fit: contain;
     border-radius: 10px;
@@ -254,6 +252,38 @@ nav ul li a {
 #resultados .imagen-container img:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Galería de imágenes de resultados */
+.imagenes-resultados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.imagenes-resultados img {
+    width: var(--tam-imagen-resultado);
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagenes-resultados img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Imágenes de tablas */
+.imagenes-tablas img {
+    width: var(--tam-imagen-tabla);
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Media Queries */
@@ -344,34 +374,6 @@ nav ul li a {
     .imagen-equipo {
         max-width: 100%;
     }
-}
-.imagenes-resultados {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px; /* ESPACIO ENTRE IMÁGENES */
-  margin: 40px 0;
-}
-
-.imagenes-resultados img {
-  width: 200px; /* CAMBIÁ ESTE VALOR PARA AJUSTAR EL TAMAÑO */
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
-  transition: transform 0.3s ease-in-out;
-}
-
-.imagenes-resultados img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-}
-.imagenes-tablas img {
-    width: 200px; /* acá ajustamos el tamaño */
-    height: auto;
-    object-fit: contain;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
 }
 
 
