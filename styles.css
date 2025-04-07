@@ -354,7 +354,7 @@ nav ul li a {
 }
 
 .imagenes-resultados img {
-  width: 300px; /* CAMBIÁ ESTE VALOR PARA AJUSTAR EL TAMAÑO */
+  width: 100px; /* CAMBIÁ ESTE VALOR PARA AJUSTAR EL TAMAÑO */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
