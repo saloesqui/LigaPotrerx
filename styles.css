@@ -106,6 +106,8 @@ footer a {
     gap: 70px;
     flex-wrap: nowrap;
     margin: 30px 0 70px;
+    overflow-x: auto;
+    padding: 0 10px;
 }
 
 /* Estilos de imágenes de equipos */
@@ -114,13 +116,15 @@ footer a {
     width: auto;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, filter 0.4s ease-in-out;
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+    filter: grayscale(50%) brightness(0.9) contrast(1.2);
 }
 
 .imagen-equipo:hover {
     transform: scale(1.1) rotate(-2deg);
     box-shadow: 0 10px 25px rgba(255, 255, 255, 0.5);
+    filter: grayscale(0%) brightness(1.1) contrast(1.2);
 }
 
 /* Imágenes generales */
@@ -245,8 +249,6 @@ nav ul li a {
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
 }
 
-}
-
 #tablas .imagen-container img:hover,
 #fixture .imagen-container img:hover,
 #resultados .imagen-container img:hover {
@@ -343,4 +345,5 @@ nav ul li a {
         max-width: 100%;
     }
 }
+
 
