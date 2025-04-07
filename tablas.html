@@ -7,6 +7,31 @@
     <title>ESTADÍSTICAS LIGA POTRERX</title>
     <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS vinculado -->
     <link href="https://fonts.googleapis.com/css2?family=Handjet&display=swap" rel="stylesheet">
+    <style>
+        .imagenes-tablas,
+        .imagenes-resultados {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .imagenes-tablas img,
+        .imagenes-resultados img {
+            width: 100px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .imagenes-tablas img:hover,
+        .imagenes-resultados img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 
 <body>
@@ -32,10 +57,10 @@
             <!-- Sección Tablas -->
             <div class="subseccion">
                 <h3>Tablas</h3>
-                <p><strong>Zona A</strong></p>
-                <img src="images/tablas_zona_a.jpg" alt="Tabla Zona A" id="tablas-a">
-                <p><strong>Zona B</strong></p>
-                <img src="images/tablas_zona_b.jpg" alt="Tabla Zona B" id="tablas-b">
+                <div class="imagenes-tablas">
+                    <img src="https://raw.githubusercontent.com/saloesqui/LigaPotrerx/refs/heads/main/TABLAA.JPG.jpg" alt="Tabla Zona A">
+                    <img src="https://raw.githubusercontent.com/saloesqui/LigaPotrerx/refs/heads/main/TABLAB.JPG.jpg" alt="Tabla Zona B">
+                </div>
             </div>
 
             <!-- Sección Resultados -->
@@ -60,6 +85,5 @@
 </body>
 
 </html>
-
 
 
