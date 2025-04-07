@@ -188,7 +188,7 @@ nav ul li a {
     margin-right: 20px;
 }
 
-/* Estilo específico para la línea "Fiesta Potrerx en construcción" */
+/* Línea especial */
 #info h3.subtitulo {
     font-size: 36px;
     font-weight: bold;
@@ -199,16 +199,9 @@ nav ul li a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-
 /* Sección Tablas */
 #tablas {
     font-family: 'Handjet', sans-serif;
-}
-
-#tablas .imagen-container {
-    max-width: 100%;
-    margin: auto;
-    text-align: center;
 }
 
 .tablas-titulo {
@@ -227,37 +220,37 @@ nav ul li a {
     margin: 30px 0 70px;
 }
 
-.tablas-imagen,
-#tablas .imagen-container img,
-#fixture .imagen-container img,
-#resultados .imagen-container img {
-    height: 310px;
-    width: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
-}
-
-.tablas-imagen:hover,
-#tablas .imagen-container img:hover,
-#fixture .imagen-container img:hover,
-#resultados .imagen-container img:hover {
-    transform: scale(1.1) rotate(-2deg);
-    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.5);
-}
-
 /* Contenedor Fixture y Resultados */
 #fixture .imagen-container,
-#resultados .imagen-container {
+#resultados .imagen-container,
+#tablas .imagen-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 70px;
     max-width: 100%;
     margin: auto;
+    text-align: center;
 }
 
+/* Estilos UNIFICADOS para imágenes de Tablas, Fixture y Resultados */
+#tablas .imagen-container img,
+#fixture .imagen-container img,
+#resultados .imagen-container img {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#tablas .imagen-container img:hover,
+#fixture .imagen-container img:hover,
+#resultados .imagen-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
@@ -317,6 +310,7 @@ nav ul li a {
     #fixture .imagen-container img,
     #tablas .imagen-container img,
     #resultados .imagen-container img {
+        width: 90%;
         max-width: 95%;
     }
 }
@@ -347,3 +341,4 @@ nav ul li a {
         max-width: 100%;
     }
 }
+
