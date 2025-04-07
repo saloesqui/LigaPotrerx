@@ -345,5 +345,25 @@ nav ul li a {
         max-width: 100%;
     }
 }
+.imagenes-resultados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* ESPACIO ENTRE IMÁGENES */
+  margin: 40px 0;
+}
+
+.imagenes-resultados img {
+  width: 300px; /* CAMBIÁ ESTE VALOR PARA AJUSTAR EL TAMAÑO */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.imagenes-resultados img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
 
 
