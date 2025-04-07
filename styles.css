@@ -237,12 +237,14 @@ nav ul li a {
 #tablas .imagen-container img,
 #fixture .imagen-container img,
 #resultados .imagen-container img {
-    width: 30%;
-    max-width: 100px;
+    width: 120px;
     height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
 }
 
 #tablas .imagen-container img:hover,
