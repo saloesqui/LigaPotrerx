@@ -206,7 +206,7 @@ nav ul li a {
 }
 
 #tablas .imagen-container {
-    max-width: 45%;
+    max-width: 100%;
     margin: auto;
     text-align: center;
 }
@@ -222,52 +222,42 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 70px;
     flex-wrap: wrap;
     margin: 30px 0 70px;
 }
 
-.tablas-imagen {
-    max-width: 45%;
-    height: auto;
+.tablas-imagen,
+#tablas .imagen-container img,
+#fixture .imagen-container img,
+#resultados .imagen-container img {
+    height: 310px;
+    width: auto;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
 }
 
-.tablas-imagen:hover {
-    transform: scale(1.1);
+.tablas-imagen:hover,
+#tablas .imagen-container img:hover,
+#fixture .imagen-container img:hover,
+#resultados .imagen-container img:hover {
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.5);
 }
 
-/* Sección Fixture y Resultados */
+/* Contenedor Fixture y Resultados */
 #fixture .imagen-container,
-#tablas .imagen-container,
 #resultados .imagen-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
-    max-width: 45%;
+    gap: 70px;
+    max-width: 100%;
     margin: auto;
 }
 
-#fixture .imagen-container img,
-#tablas .imagen-container img,
-#resultados .imagen-container img {
-    width: 80%;
-    max-width: 45%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#fixture .imagen-container img:hover,
-#tablas .imagen-container img:hover,
-#resultados .imagen-container img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-}
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
