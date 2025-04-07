@@ -110,11 +110,26 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: clamp(20px, 5vw, 70px);
     flex-wrap: nowrap;
     margin: 30px 0 70px;
     overflow-x: auto;
     padding: 0 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #ff66c4 transparent;
+}
+
+.equipos-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.equipos-container::-webkit-scrollbar-thumb {
+    background-color: #ff66c4;
+    border-radius: 8px;
+}
+
+.equipos-container::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 /* Estilos de imágenes de equipos */
@@ -157,7 +172,6 @@ footer a {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Ajuste de margen para el logo */
 img[src="https://github.com/saloesqui/LigaPotrerx/raw/main/logo.png"] {
     margin: 0;
 }
@@ -235,7 +249,7 @@ nav ul li a {
     text-align: center;
 }
 
-/* Estilos UNIFICADOS para imágenes de Tablas, Fixture y Resultados */
+/* Estilos unificados */
 #tablas .imagen-container img,
 #fixture .imagen-container img,
 #resultados .imagen-container img {
@@ -334,6 +348,7 @@ nav ul li a {
         flex-direction: column;
         gap: 30px;
         margin-top: 50px;
+        overflow-x: hidden; /* Oculta scroll horizontal en mobile */
     }
 
     .imagen-equipo {
@@ -375,5 +390,3 @@ nav ul li a {
         max-width: 100%;
     }
 }
-
-
