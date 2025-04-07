@@ -206,7 +206,7 @@ nav ul li a {
 }
 
 #tablas .imagen-container {
-    max-width: 90%;
+    max-width: 45%;
     margin: auto;
     text-align: center;
 }
@@ -247,14 +247,14 @@ nav ul li a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-    max-width: 90%;
+    max-width: 45%;
     margin: auto;
 }
 
 #fixture .imagen-container img,
 #tablas .imagen-container img,
 #resultados .imagen-container img {
-    width: 100%;
+    width: 80%;
     max-width: 45%;
     height: auto;
     border-radius: 15px;
