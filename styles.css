@@ -1,8 +1,8 @@
 /* Variables personalizables */
 :root {
     --tam-imagen-equipo: 310px;
-    --tam-imagen-tabla: 200px;
-    --tam-imagen-resultado: 200px;
+    --tam-imagen-tabla: 150px;
+    --tam-imagen-resultado: 150px;
 }
 
 /* Estilos generales */
