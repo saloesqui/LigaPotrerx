@@ -215,7 +215,6 @@ nav ul li a {
     text-align: center;
 }
 
-/* Contenedor de imágenes */
 .tablas-imagen-container {
     display: flex;
     justify-content: center;
@@ -225,7 +224,6 @@ nav ul li a {
     margin: 30px 0 70px;
 }
 
-/* Estilos de imágenes */
 .tablas-imagen {
     height: 310px;
     width: auto;
@@ -238,43 +236,31 @@ nav ul li a {
     transform: scale(1.1);
 }
 
-/* Imágenes generales */
-.imagen-tablas, .imagen-sobre-tablas {
-    width: 100%;
-    display: block;
-    margin: 20px auto;
+/* Sección Fixture y Resultados */
+#fixture .imagen-container,
+#tablas .imagen-container,
+#resultados .imagen-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: 90%;
+    margin: auto;
 }
 
-.imagen-tablas {
-    max-width: 600px;
-}
-
-.imagen-sobre-tablas {
-    max-width: 420px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.imagen-sobre-tablas:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Sección Fixture */
 #fixture .imagen-container img,
 #tablas .imagen-container img,
 #resultados .imagen-container img {
     width: 100%;
-    max-width: 1000px;
+    max-width: 500px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#tablas .imagen-container img:hover,
 #fixture .imagen-container img:hover,
+#tablas .imagen-container img:hover,
 #resultados .imagen-container img:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
@@ -324,7 +310,6 @@ nav ul li a {
         margin-right: 10px;
     }
 
-    /* Ajustes en la sección de equipos */
     .equipos-container {
         flex-direction: column;
         gap: 30px;
@@ -336,10 +321,10 @@ nav ul li a {
         max-width: 250px;
     }
 
-    /* Estilo para el footer en tablas.html */
-    #tablas footer {
-        font-family: 'Handjet', sans-serif;
-        font-weight: bold;
+    #fixture .imagen-container img,
+    #tablas .imagen-container img,
+    #resultados .imagen-container img {
+        max-width: 95%;
     }
 }
 
@@ -369,4 +354,3 @@ nav ul li a {
         max-width: 100%;
     }
 }
-
