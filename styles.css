@@ -1,10 +1,12 @@
-/* =================== VARIABLES =================== */
+/* Variables personalizables */
 :root {
     --tam-imagen-equipo: 310px;
-    --tam-imagen-seccion: 300px; /* Tamaño unificado para tablas, fixture, resultados */
+    --tam-imagen-tabla: 300px;
+    --tam-imagen-resultado: 300px;
+  
 }
 
-/* =================== ESTILOS GENERALES =================== */
+/* Estilos generales */
 body {
     background: #000 url('https://raw.githubusercontent.com/saloesqui/LigaPotrerx/main/fondo.png') center/cover repeat-y;
     color: #fff;
@@ -19,7 +21,7 @@ body {
     justify-content: space-between;
 }
 
-/* =================== TITULOS Y ENLACES =================== */
+/* Títulos y enlaces */
 h1, h2, .subtitulo, .reglamento-enlace {
     font-family: 'Handjet', sans-serif;
     color: #8c52ff;
@@ -55,7 +57,7 @@ a:hover {
     color: #ff3385;
 }
 
-/* =================== BOTONES =================== */
+/* Botones */
 button {
     background: #85f876;
     color: #000;
@@ -72,7 +74,7 @@ button:hover {
     background: #85f876;
 }
 
-/* =================== FOOTER =================== */
+/* Footer */
 footer {
     margin-top: auto;
     padding: 20px 0;
@@ -86,7 +88,7 @@ footer a {
     font-size: 1.2em;
 }
 
-/* =================== SECCIÓN EKIPXS =================== */
+/* Sección ekipxs */
 .ekipxs-container {
     max-width: 80%;
     margin: auto;
@@ -104,7 +106,7 @@ footer a {
     white-space: nowrap;
 }
 
-/* Contenedor horizontal scrolleable */
+/* Contenedor de imágenes de equipos */
 .equipos-container {
     display: flex;
     justify-content: center;
@@ -121,15 +123,17 @@ footer a {
 .equipos-container::-webkit-scrollbar {
     height: 10px;
 }
+
 .equipos-container::-webkit-scrollbar-thumb {
     background-color: #ff66c4;
     border-radius: 8px;
 }
+
 .equipos-container::-webkit-scrollbar-track {
     background: transparent;
 }
 
-/* Imágenes ekipxs */
+/* Estilos de imágenes de equipos */
 .imagen-equipo {
     height: var(--tam-imagen-equipo);
     width: auto;
@@ -146,19 +150,19 @@ footer a {
     filter: grayscale(0%) brightness(1.1) contrast(1.2);
 }
 
-/* =================== OTRAS IMÁGENES =================== */
-.imagen-ekipxs {
-    max-width: 600px;
+/* Imágenes generales */
+.imagen-ekipxs, .imagen-sobre {
     width: 100%;
     display: block;
     margin: 20px auto;
 }
 
+.imagen-ekipxs {
+    max-width: 600px;
+}
+
 .imagen-sobre {
     max-width: 420px;
-    width: 100%;
-    display: block;
-    margin: 20px auto;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -173,7 +177,7 @@ img[src="https://github.com/saloesqui/LigaPotrerx/raw/main/logo.png"] {
     margin: 0;
 }
 
-/* =================== NAVEGACIÓN =================== */
+/* Navegación */
 nav ul {
     list-style: none;
     padding: 0;
@@ -192,7 +196,7 @@ nav ul li a {
     font-size: 1.2em;
 }
 
-/* =================== CONTADORES =================== */
+/* Contadores */
 .contador {
     display: inline-block;
     margin-right: 20px;
@@ -202,6 +206,7 @@ nav ul li a {
     padding: 5px 10px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 #visit-count, #time-spent {
@@ -209,7 +214,7 @@ nav ul li a {
     margin-right: 20px;
 }
 
-/* =================== TÍTULO SECCIÓN ESPECIAL =================== */
+/* Línea especial */
 #info h3.subtitulo {
     font-size: 36px;
     font-weight: bold;
@@ -220,14 +225,22 @@ nav ul li a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* =================== TABLAS, FIXTURE, RESULTADOS =================== */
-.seccion-seccion {
+/* Sección Tablas */
+#tablas {
     font-family: 'Handjet', sans-serif;
 }
 
-#tablas .imagen-container,
+.tablas-titulo {
+    font-size: 35px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* Contenedor Fixture y Resultados */
 #fixture .imagen-container,
-#resultados .imagen-container {
+#resultados .imagen-container,
+#tablas .imagen-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -237,15 +250,16 @@ nav ul li a {
     text-align: center;
 }
 
+/* Estilos unificados */
 #tablas .imagen-container img,
 #fixture .imagen-container img,
 #resultados .imagen-container img {
-    width: var(--tam-imagen-seccion);
+    width: var(--tam-imagen-tabla);
     height: auto;
     object-fit: contain;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
     transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
 }
 
 #tablas .imagen-container img:hover,
@@ -255,7 +269,32 @@ nav ul li a {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* =================== MEDIA QUERIES =================== */
+/* Galería de imágenes de resultados */
+.imagenes-resultados,
+.imagenes-tablas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.imagenes-resultados img,
+.imagenes-tablas img {
+    width: var(--tam-imagen-resultado);
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagenes-resultados img:hover,
+.imagenes-tablas img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Media Queries */
 @media screen and (max-width: 768px) {
     .tablas-fixture {
         flex-direction: column;
@@ -269,6 +308,10 @@ nav ul li a {
 
     h2 {
         font-size: 24px;
+    }
+
+    .imagen-tabla img, .imagen-fixture img, .imagen-resultados img {
+        max-width: 100%;
     }
 
     .ekipxs-container {
