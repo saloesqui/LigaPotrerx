@@ -3,7 +3,6 @@
     --tam-imagen-equipo: 310px;
     --tam-imagen-tabla: 300px;
     --tam-imagen-resultado: 300px;
-  
 }
 
 /* Estilos generales */
@@ -271,7 +270,8 @@ nav ul li a {
 
 /* Galería de imágenes de resultados */
 .imagenes-resultados,
-.imagenes-tablas {
+.imagenes-tablas,
+.imagenes-fixture {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -280,7 +280,8 @@ nav ul li a {
 }
 
 .imagenes-resultados img,
-.imagenes-tablas img {
+.imagenes-tablas img,
+.imagenes-fixture img {
     width: var(--tam-imagen-resultado);
     height: auto;
     border-radius: 10px;
@@ -289,7 +290,8 @@ nav ul li a {
 }
 
 .imagenes-resultados img:hover,
-.imagenes-tablas img:hover {
+.imagenes-tablas img:hover,
+.imagenes-fixture img:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
@@ -384,3 +386,4 @@ nav ul li a {
         max-width: 100%;
     }
 }
+
