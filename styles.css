@@ -93,6 +93,15 @@ footer a {
     margin: auto;
     text-align: center;
 }
+.nombre-equipo {
+  color: magenta;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* sombra suave como subtítulo */
+  font-family: 'Handjet', cursive; /* igual que los títulos si usás Handjet */
+  font-size: 1.2rem;
+}
 
 .campeonas {
     text-align: center;
