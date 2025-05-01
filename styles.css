@@ -358,6 +358,32 @@ nav ul li a {
         width: 90%;
         max-width: 95%;
     }
+
+/* =========================
+   Sección Ekipxs (12 plazas)
+   ========================= */
+.imagenes-ekipxs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;              /* misma separación que tablas/resultados */
+  margin: 40px 0;         /* igual margen vertical */
+}
+
+.imagenes-ekipxs img {
+  width: var(--tam-imagen-resultado);  /* usa misma variable de tamaño */
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;    /* bordes redondeados idénticos */
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.imagenes-ekipxs img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
 }
 
 @media screen and (max-width: 480px) {
